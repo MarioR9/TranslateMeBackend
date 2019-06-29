@@ -5533,3 +5533,1439 @@ DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `paren
 Completed 200 OK in 85ms (Views: 58.8ms | ActiveRecord: 26.2ms | Allocations: 18657)
 
 
+Started GET "/api/v1/users" for ::1 at 2019-06-27 11:46:43 -0400
+Processing by Api::V1::UsersController#index as JSON
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from index at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:4)
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from index at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:4)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.6ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.9ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.7ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (59.54ms)
+Completed 200 OK in 78ms (Views: 66.8ms | ActiveRecord: 7.4ms | Allocations: 18791)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-06-27 11:46:44 -0400
+Processing by Api::V1::UsersController#index as JSON
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from index at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:4)
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from index at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:4)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (28.18ms)
+Completed 200 OK in 83ms (Views: 79.4ms | ActiveRecord: 3.8ms | Allocations: 18660)
+
+
+Started GET "/" for ::1 at 2019-06-27 12:19:09 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/flatironschool/.rvm/gems/ruby-2.6.1/gems/railties-6.0.0.rc1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/flatironschool/.rvm/gems/ruby-2.6.1/gems/railties-6.0.0.rc1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 15.1ms | Allocations: 202)
+Completed 200 OK in 20ms (Views: 16.9ms | ActiveRecord: 0.0ms | Allocations: 869)
+
+
+Started GET "/favicon.ico" for ::1 at 2019-06-27 12:19:10 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+railties (6.0.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0.rc1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0.rc1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0.rc1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0.rc1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+activesupport (6.0.0.rc1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/static.rb:126:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+railties (6.0.0.rc1) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/api/v1/users" for ::1 at 2019-06-27 12:19:15 -0400
+Processing by Api::V1::UsersController#index as JSON
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from index at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:4)
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from index at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:4)
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCategory Load (1.8ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mImage Load (1.8ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.6ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.6ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (79.15ms)
+Completed 200 OK in 87ms (Views: 76.3ms | ActiveRecord: 10.6ms | Allocations: 18794)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-06-27 12:19:15 -0400
+Processing by Api::V1::UsersController#index as JSON
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from index at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:4)
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from index at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:4)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (72.88ms)
+Completed 200 OK in 75ms (Views: 70.8ms | ActiveRecord: 4.4ms | Allocations: 18657)
+
+
+Started GET "/" for ::1 at 2019-06-27 14:25:58 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/flatironschool/.rvm/gems/ruby-2.6.1/gems/railties-6.0.0.rc1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/flatironschool/.rvm/gems/ruby-2.6.1/gems/railties-6.0.0.rc1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 24.1ms | Allocations: 195)
+Completed 200 OK in 41ms (Views: 35.5ms | ActiveRecord: 0.0ms | Allocations: 730)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-06-27 14:26:03 -0400
+Processing by Api::V1::UsersController#index as JSON
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from index at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:4)
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from index at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:4)
+  [1m[36mUser Load (4.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mImage Load (3.1ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.7ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (70.94ms)
+Completed 200 OK in 83ms (Views: 69.6ms | ActiveRecord: 12.2ms | Allocations: 18793)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-06-27 14:26:03 -0400
+Processing by Api::V1::UsersController#index as JSON
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from index at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:4)
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from index at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:4)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.8ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (58.57ms)
+Completed 200 OK in 64ms (Views: 58.9ms | ActiveRecord: 4.4ms | Allocations: 18657)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-06-28 08:44:27 -0400
+Processing by Api::V1::UsersController#index as JSON
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from index at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:4)
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from index at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:4)
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mImage Load (1.8ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.8ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.6ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.7ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (59.91ms)
+Completed 200 OK in 78ms (Views: 66.1ms | ActiveRecord: 9.7ms | Allocations: 18792)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-06-28 08:44:27 -0400
+Processing by Api::V1::UsersController#index as JSON
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from index at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:4)
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from index at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:4)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.8ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.6ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.7ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.8ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.7ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (142.18ms)
+Completed 200 OK in 150ms (Views: 143.4ms | ActiveRecord: 6.5ms | Allocations: 18661)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-06-28 10:23:00 -0400
+Processing by Api::V1::UsersController#index as JSON
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from index at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:4)
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from index at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:4)
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.6ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.7ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (46.09ms)
+Completed 200 OK in 66ms (Views: 55.2ms | ActiveRecord: 7.6ms | Allocations: 18791)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-06-28 10:23:00 -0400
+Processing by Api::V1::UsersController#index as JSON
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from index at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:4)
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from index at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:4)
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (67.33ms)
+Completed 200 OK in 77ms (Views: 71.2ms | ActiveRecord: 4.9ms | Allocations: 18660)
+
+
+Started GET "/api/v1/images" for ::1 at 2019-06-28 13:53:36 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/images"):
+  
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+railties (6.0.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0.rc1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0.rc1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0.rc1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0.rc1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+activesupport (6.0.0.rc1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/static.rb:126:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+railties (6.0.0.rc1) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/api/v1/users" for ::1 at 2019-06-28 13:53:40 -0400
+Processing by Api::V1::UsersController#index as JSON
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from index at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:4)
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from index at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:4)
+  [1m[36mUser Load (3.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.7ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mImage Load (1.2ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (43.69ms)
+Completed 200 OK in 57ms (Views: 47.2ms | ActiveRecord: 8.6ms | Allocations: 18791)
+
+
+Started POST "/api/v1/users" for ::1 at 2019-06-28 14:02:48 -0400
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"image"=>{"0"=>{}}, "user"=>{}}
+Completed 204 No Content in 2259486ms (ActiveRecord: 17.2ms | Allocations: 46708)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-06-28 14:41:10 -0400
+Processing by Api::V1::UsersController#index as JSON
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from index at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:5)
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from index at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:5)
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.8ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.6ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (122.95ms)
+Completed 200 OK in 215ms (Views: 175.6ms | ActiveRecord: 35.4ms | Allocations: 34131)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-06-28 14:41:10 -0400
+Processing by Api::V1::UsersController#index as JSON
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from index at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:5)
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from index at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:5)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.8ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (66.61ms)
+Completed 200 OK in 74ms (Views: 68.7ms | ActiveRecord: 4.6ms | Allocations: 18660)
+
+
+Started POST "/api/v1/users" for ::1 at 2019-06-28 14:41:19 -0400
+Processing by Api::V1::UsersController#create as JSON
+Completed 204 No Content in 21132ms (ActiveRecord: 0.0ms | Allocations: 2743)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-06-28 14:41:44 -0400
+Processing by Api::V1::UsersController#index as JSON
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from index at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:5)
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from index at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:5)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.9ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (50.13ms)
+Completed 200 OK in 55ms (Views: 49.8ms | ActiveRecord: 5.0ms | Allocations: 18657)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-06-28 14:41:44 -0400
+Processing by Api::V1::UsersController#index as JSON
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from index at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:5)
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from index at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:5)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.6ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (42.5ms)
+Completed 200 OK in 48ms (Views: 43.1ms | ActiveRecord: 4.7ms | Allocations: 18657)
+
+
+Started POST "/api/v1/users" for ::1 at 2019-06-28 14:42:09 -0400
+Processing by Api::V1::UsersController#create as JSON
+Completed 204 No Content in 105051ms (ActiveRecord: 0.0ms | Allocations: 78614)
+
+
+Started POST "/api/v1/users" for ::1 at 2019-06-28 14:44:00 -0400
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"files"=>#<ActionDispatch::Http::UploadedFile:0x00007fc9927ea758 @tempfile=#<Tempfile:/var/folders/kh/9t0cfpld5w1cb9d4fclw1q2c0000gn/T/RackMultipart20190628-63258-jn03jh.jpg>, @original_filename="apple.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"files\"; filename=\"apple.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+Completed 204 No Content in 60355ms (ActiveRecord: 0.0ms | Allocations: 2634)
+
+
+Started POST "/api/v1/users" for ::1 at 2019-06-28 14:48:29 -0400
+  
+LoadError (cannot load such file -- /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/inventory.rb):
+  
+app/controllers/api/v1/users_controller.rb:1:in `<main>'
+Started GET "/api/v1/users" for ::1 at 2019-06-28 14:49:30 -0400
+  
+LoadError (cannot load such file -- /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/inventory.rb):
+  
+app/controllers/api/v1/users_controller.rb:1:in `<main>'
+Started GET "/api/v1/users" for ::1 at 2019-06-28 14:49:54 -0400
+  
+LoadError (cannot load such file -- /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/inventory.rb):
+  
+app/controllers/api/v1/users_controller.rb:1:in `<main>'
+Started GET "/api/v1/users" for ::1 at 2019-06-28 14:50:25 -0400
+  
+LoadError (cannot load such file -- /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/...../inventory.rb):
+  
+app/controllers/api/v1/users_controller.rb:1:in `<main>'
+Started GET "/api/v1/users" for ::1 at 2019-06-28 14:50:33 -0400
+  
+LoadError (cannot load such file -- /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/....../inventory.rb):
+  
+app/controllers/api/v1/users_controller.rb:1:in `<main>'
+Started GET "/api/v1/users" for ::1 at 2019-06-28 14:50:41 -0400
+  
+LoadError (cannot load such file -- /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/..../inventory.rb):
+  
+app/controllers/api/v1/users_controller.rb:1:in `<main>'
+Started GET "/api/v1/users" for ::1 at 2019-06-28 14:50:48 -0400
+  
+LoadError (cannot load such file -- /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/.../inventory.rb):
+  
+app/controllers/api/v1/users_controller.rb:1:in `<main>'
+Started GET "/api/v1/users" for ::1 at 2019-06-28 14:50:53 -0400
+  
+LoadError (cannot load such file -- /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/inventory.rb):
+  
+app/controllers/api/v1/users_controller.rb:1:in `<main>'
+Started GET "/api/v1/users" for ::1 at 2019-06-28 14:51:00 -0400
+  
+LoadError (cannot load such file -- /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/inventory.rb):
+  
+app/controllers/api/v1/users_controller.rb:1:in `<main>'
+Started GET "/api/v1/users" for ::1 at 2019-06-28 14:51:11 -0400
+Processing by Api::V1::UsersController#index as JSON
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from index at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:13)
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from index at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:13)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.6ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (92.9ms)
+Completed 200 OK in 126ms (Views: 89.3ms | ActiveRecord: 30.0ms | Allocations: 33214)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-06-28 14:51:11 -0400
+Processing by Api::V1::UsersController#index as JSON
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from index at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:13)
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from index at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:13)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (42.77ms)
+Completed 200 OK in 48ms (Views: 42.7ms | ActiveRecord: 4.4ms | Allocations: 18660)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-06-28 14:51:59 -0400
+Processing by Api::V1::UsersController#index as JSON
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from index at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:13)
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from index at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:13)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (1.0ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (101.12ms)
+Completed 200 OK in 129ms (Views: 93.9ms | ActiveRecord: 31.3ms | Allocations: 33194)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-06-28 14:51:59 -0400
+Processing by Api::V1::UsersController#index as JSON
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from index at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:13)
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from index at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:13)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.6ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (31.77ms)
+Completed 200 OK in 35ms (Views: 31.1ms | ActiveRecord: 3.7ms | Allocations: 18657)
+
+
+Started POST "/api/v1/users" for ::1 at 2019-06-28 14:52:22 -0400
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"files"=>#<ActionDispatch::Http::UploadedFile:0x00007fc990fc0100 @tempfile=#<Tempfile:/var/folders/kh/9t0cfpld5w1cb9d4fclw1q2c0000gn/T/RackMultipart20190628-63258-5ltqa1.jpg>, @original_filename="apple.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"files\"; filename=\"apple.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+Completed 500 Internal Server Error in 20786ms (ActiveRecord: 0.0ms | Allocations: 2873)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+app/controllers/api/v1/users_controller.rb:23:in `initialize'
+app/controllers/api/v1/users_controller.rb:23:in `open'
+app/controllers/api/v1/users_controller.rb:23:in `create'
+Started GET "/api/v1/users" for ::1 at 2019-06-28 14:53:42 -0400
+Processing by Api::V1::UsersController#index as JSON
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from index at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:13)
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from index at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:13)
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (36.66ms)
+Completed 200 OK in 42ms (Views: 36.9ms | ActiveRecord: 5.3ms | Allocations: 18656)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-06-28 14:53:42 -0400
+Processing by Api::V1::UsersController#index as JSON
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from index at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:13)
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from index at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:13)
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mCategory Load (2.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.6ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (58.37ms)
+Completed 200 OK in 66ms (Views: 58.6ms | ActiveRecord: 7.3ms | Allocations: 18660)
+
+
+Started POST "/api/v1/users" for ::1 at 2019-06-28 14:54:02 -0400
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"files"=>#<ActionDispatch::Http::UploadedFile:0x00007fc991a58608 @tempfile=#<Tempfile:/var/folders/kh/9t0cfpld5w1cb9d4fclw1q2c0000gn/T/RackMultipart20190628-63258-1q8rte9.jpg>, @original_filename="apple.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"files\"; filename=\"apple.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+Completed 500 Internal Server Error in 64453ms (ActiveRecord: 0.0ms | Allocations: 4514)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+app/controllers/api/v1/users_controller.rb:23:in `initialize'
+app/controllers/api/v1/users_controller.rb:23:in `open'
+app/controllers/api/v1/users_controller.rb:23:in `create'
+Started GET "/api/v1/users" for ::1 at 2019-06-28 14:55:32 -0400
+Processing by Api::V1::UsersController#index as JSON
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from index at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:13)
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from index at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:13)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mCategory Load (12.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mCategory Load (3.9ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (2.2ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (1.7ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.6ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (1.3ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.8ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.8ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (262.02ms)
+Completed 200 OK in 315ms (Views: 234.9ms | ActiveRecord: 69.7ms | Allocations: 33194)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-06-28 14:55:33 -0400
+Processing by Api::V1::UsersController#index as JSON
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from index at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:13)
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from index at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:13)
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.9ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (3.8ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (1.0ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (87.19ms)
+Completed 200 OK in 95ms (Views: 84.1ms | ActiveRecord: 10.0ms | Allocations: 18657)
+
+
+Started POST "/api/v1/users" for ::1 at 2019-06-28 14:57:21 -0400
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"files"=>#<ActionDispatch::Http::UploadedFile:0x00007fc9950cf0d8 @tempfile=#<Tempfile:/var/folders/kh/9t0cfpld5w1cb9d4fclw1q2c0000gn/T/RackMultipart20190628-63258-d3qoa4.jpg>, @original_filename="apple.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"files\"; filename=\"apple.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from block in create at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:27)
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from block in create at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:27)
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.21ms)
+Completed 200 OK in 16152ms (Views: 20.6ms | ActiveRecord: 0.0ms | Allocations: 11559)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-06-28 14:58:13 -0400
+Processing by Api::V1::UsersController#index as JSON
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from index at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:13)
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from index at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:13)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.6ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (40.01ms)
+Completed 200 OK in 45ms (Views: 40.4ms | ActiveRecord: 4.0ms | Allocations: 18657)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-06-28 14:58:13 -0400
+Processing by Api::V1::UsersController#index as JSON
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from index at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:13)
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from index at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:13)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.9ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (1.0ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (78.34ms)
+Completed 200 OK in 82ms (Views: 76.2ms | ActiveRecord: 5.2ms | Allocations: 18663)
+
+
+Started POST "/api/v1/users" for ::1 at 2019-06-28 15:02:03 -0400
+Processing by Api::V1::UsersController#create as JSON
+Completed 500 Internal Server Error in 44696ms (ActiveRecord: 0.0ms | Allocations: 4843)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+app/controllers/api/v1/users_controller.rb:23:in `initialize'
+app/controllers/api/v1/users_controller.rb:23:in `open'
+app/controllers/api/v1/users_controller.rb:23:in `create'
+Started POST "/api/v1/users" for ::1 at 2019-06-28 15:02:55 -0400
+Processing by Api::V1::UsersController#create as JSON
+Completed 500 Internal Server Error in 18893ms (ActiveRecord: 0.0ms | Allocations: 3206)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+app/controllers/api/v1/users_controller.rb:23:in `initialize'
+app/controllers/api/v1/users_controller.rb:23:in `open'
+app/controllers/api/v1/users_controller.rb:23:in `create'
+Started POST "/api/v1/users" for ::1 at 2019-06-28 15:03:19 -0400
+Processing by Api::V1::UsersController#create as JSON
+Completed 500 Internal Server Error in 18282ms (ActiveRecord: 0.0ms | Allocations: 3328)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+app/controllers/api/v1/users_controller.rb:23:in `initialize'
+app/controllers/api/v1/users_controller.rb:23:in `open'
+app/controllers/api/v1/users_controller.rb:23:in `create'
+Started POST "/api/v1/users" for ::1 at 2019-06-28 15:03:47 -0400
+Processing by Api::V1::UsersController#create as JSON
+Completed 500 Internal Server Error in 22017ms (ActiveRecord: 0.0ms | Allocations: 3433)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+app/controllers/api/v1/users_controller.rb:23:in `initialize'
+app/controllers/api/v1/users_controller.rb:23:in `open'
+app/controllers/api/v1/users_controller.rb:23:in `create'
+Started POST "/api/v1/users" for ::1 at 2019-06-28 15:04:14 -0400
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"files"=>#<ActionDispatch::Http::UploadedFile:0x00007fc990a68b80 @tempfile=#<Tempfile:/var/folders/kh/9t0cfpld5w1cb9d4fclw1q2c0000gn/T/RackMultipart20190628-63258-1c3btxr.jpg>, @original_filename="apple.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"files\"; filename=\"apple.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from block in create at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:27)
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from block in create at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:27)
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.34ms)
+Completed 200 OK in 15560ms (Views: 5.1ms | ActiveRecord: 0.0ms | Allocations: 9551)
+
+
+Started POST "/api/v1/users" for ::1 at 2019-06-28 15:04:37 -0400
+Processing by Api::V1::UsersController#create as JSON
+Completed 500 Internal Server Error in 29641ms (ActiveRecord: 0.0ms | Allocations: 3555)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+app/controllers/api/v1/users_controller.rb:23:in `initialize'
+app/controllers/api/v1/users_controller.rb:23:in `open'
+app/controllers/api/v1/users_controller.rb:23:in `create'
+Started POST "/api/v1/users" for ::1 at 2019-06-28 15:05:07 -0400
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"files"=>#<ActionDispatch::Http::UploadedFile:0x00007fc992567558 @tempfile=#<Tempfile:/var/folders/kh/9t0cfpld5w1cb9d4fclw1q2c0000gn/T/RackMultipart20190628-63258-7e6oym.jpg>, @original_filename="apple.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"files\"; filename=\"apple.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from block in create at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:27)
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from block in create at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:27)
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.74ms)
+Completed 200 OK in 9000ms (Views: 4.6ms | ActiveRecord: 0.0ms | Allocations: 9749)
+
+
+Started POST "/api/v1/users" for ::1 at 2019-06-28 15:06:31 -0400
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"files"=>#<ActionDispatch::Http::UploadedFile:0x00007fc990f08e38 @tempfile=#<Tempfile:/var/folders/kh/9t0cfpld5w1cb9d4fclw1q2c0000gn/T/RackMultipart20190628-63258-1pp5e2d.jpg>, @original_filename="apple.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"files\"; filename=\"apple.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from block in create at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:27)
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from block in create at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:27)
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.8ms)
+Completed 200 OK in 825ms (Views: 3.8ms | ActiveRecord: 0.0ms | Allocations: 6946)
+
+
+Started POST "/api/v1/users" for ::1 at 2019-06-28 15:09:53 -0400
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"files"=>#<ActionDispatch::Http::UploadedFile:0x00007fc995830bb0 @tempfile=#<Tempfile:/var/folders/kh/9t0cfpld5w1cb9d4fclw1q2c0000gn/T/RackMultipart20190628-63258-1biog0f.jpg>, @original_filename="apple.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"files\"; filename=\"apple.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from block in create at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:27)
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from block in create at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:27)
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.16ms)
+Completed 200 OK in 777ms (Views: 3.7ms | ActiveRecord: 0.0ms | Allocations: 6761)
+
+
+Started POST "/api/v1/users" for ::1 at 2019-06-28 15:25:55 -0400
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"files"=>#<ActionDispatch::Http::UploadedFile:0x00007fc990f3eb00 @tempfile=#<Tempfile:/var/folders/kh/9t0cfpld5w1cb9d4fclw1q2c0000gn/T/RackMultipart20190628-63258-1w4ag1e.jpg>, @original_filename="apple.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"files\"; filename=\"apple.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from block in create at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:27)
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from block in create at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:27)
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.34ms)
+Completed 200 OK in 814ms (Views: 7.6ms | ActiveRecord: 0.0ms | Allocations: 6762)
+
+
+Started POST "/api/v1/users" for ::1 at 2019-06-28 15:33:51 -0400
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"files"=>#<ActionDispatch::Http::UploadedFile:0x00007fc991382fe0 @tempfile=#<Tempfile:/var/folders/kh/9t0cfpld5w1cb9d4fclw1q2c0000gn/T/RackMultipart20190628-63258-1eskbfm.jpg>, @original_filename="apple.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"files\"; filename=\"apple.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from block in create at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:27)
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from block in create at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:27)
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.25ms)
+Completed 200 OK in 905ms (Views: 8.8ms | ActiveRecord: 0.0ms | Allocations: 6762)
+
+
+Started POST "/api/v1/users" for ::1 at 2019-06-28 16:25:42 -0400
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"files"=>#<ActionDispatch::Http::UploadedFile:0x00007fc995919e00 @tempfile=#<Tempfile:/var/folders/kh/9t0cfpld5w1cb9d4fclw1q2c0000gn/T/RackMultipart20190628-63258-1sffzs5.jpg>, @original_filename="apple.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"files\"; filename=\"apple.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from block in create at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:27)
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from block in create at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:27)
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (2.02ms)
+Completed 200 OK in 1036ms (Views: 24.0ms | ActiveRecord: 0.0ms | Allocations: 6764)
+
+
+Started POST "/api/v1/users" for ::1 at 2019-06-28 16:29:12 -0400
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"files"=>#<ActionDispatch::Http::UploadedFile:0x00007fc995154ff8 @tempfile=#<Tempfile:/var/folders/kh/9t0cfpld5w1cb9d4fclw1q2c0000gn/T/RackMultipart20190628-63258-1ha4qw2.jpg>, @original_filename="apple.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"files\"; filename=\"apple.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from block in create at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:27)
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from block in create at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:27)
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.9ms)
+Completed 200 OK in 674ms (Views: 2.7ms | ActiveRecord: 0.0ms | Allocations: 6812)
+
+
+Started POST "/api/v1/users" for ::1 at 2019-06-28 17:01:19 -0400
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"files"=>#<ActionDispatch::Http::UploadedFile:0x00007fc992731fc8 @tempfile=#<Tempfile:/var/folders/kh/9t0cfpld5w1cb9d4fclw1q2c0000gn/T/RackMultipart20190628-63258-cia9rn.jpg>, @original_filename="apple.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"files\"; filename=\"apple.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from block in create at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:27)
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from block in create at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:27)
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.47ms)
+Completed 200 OK in 149062ms (Views: 9.4ms | ActiveRecord: 0.0ms | Allocations: 10546)
+
+
+Started POST "/api/v1/users" for ::1 at 2019-06-28 17:06:20 -0400
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"files"=>#<ActionDispatch::Http::UploadedFile:0x00007fc990fb4698 @tempfile=#<Tempfile:/var/folders/kh/9t0cfpld5w1cb9d4fclw1q2c0000gn/T/RackMultipart20190628-63258-1qjfm12.jpg>, @original_filename="apple.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"files\"; filename=\"apple.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from block in create at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:27)
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from block in create at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:27)
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.93ms)
+Completed 200 OK in 5264ms (Views: 3.1ms | ActiveRecord: 0.0ms | Allocations: 10328)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-06-28 17:07:16 -0400
+Processing by Api::V1::UsersController#index as JSON
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from index at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:13)
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from index at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:13)
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.9ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (1.2ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (116.36ms)
+Completed 200 OK in 174ms (Views: 115.2ms | ActiveRecord: 39.6ms | Allocations: 35280)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-06-28 17:07:16 -0400
+Processing by Api::V1::UsersController#index as JSON
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from index at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:13)
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from index at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:13)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mCategory Load (1.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.6ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (2.6ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.6ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (61.01ms)
+Completed 200 OK in 67ms (Views: 58.6ms | ActiveRecord: 7.7ms | Allocations: 18657)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-06-28 17:07:46 -0400
+Processing by Api::V1::UsersController#index as JSON
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from index at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:13)
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from index at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:13)
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (37.05ms)
+Completed 200 OK in 44ms (Views: 38.6ms | ActiveRecord: 5.3ms | Allocations: 18657)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-06-28 17:07:46 -0400
+Processing by Api::V1::UsersController#index as JSON
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from index at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:13)
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from index at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:13)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (1.6ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:13:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (47.08ms)
+Completed 200 OK in 53ms (Views: 46.4ms | ActiveRecord: 6.0ms | Allocations: 18657)
+
+
+Started POST "/api/v1/users" for ::1 at 2019-06-28 17:07:56 -0400
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"files"=>#<ActionDispatch::Http::UploadedFile:0x00007fc992785b00 @tempfile=#<Tempfile:/var/folders/kh/9t0cfpld5w1cb9d4fclw1q2c0000gn/T/RackMultipart20190628-63258-12hyem5.jpg>, @original_filename="apple.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"files\"; filename=\"apple.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from block in create at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:27)
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from block in create at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:27)
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.71ms)
+Completed 200 OK in 20828ms (Views: 2.7ms | ActiveRecord: 0.0ms | Allocations: 10419)
+
+
+Started POST "/api/v1/users" for ::1 at 2019-06-28 17:14:14 -0400
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"files"=>#<ActionDispatch::Http::UploadedFile:0x00007fc9912ab978 @tempfile=#<Tempfile:/var/folders/kh/9t0cfpld5w1cb9d4fclw1q2c0000gn/T/RackMultipart20190628-63258-1bjujhp.jpg>, @original_filename="apple.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"files\"; filename=\"apple.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from block in create at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:27)
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from block in create at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:27)
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.46ms)
+Completed 200 OK in 5913ms (Views: 4.1ms | ActiveRecord: 0.0ms | Allocations: 10613)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-06-28 17:18:42 -0400
+Processing by Api::V1::UsersController#index as JSON
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from index at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:14)
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from index at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:14)
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:14:in `index'
+[active_model_serializers]   [1m[36mCategory Load (1.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:14:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:14:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:14:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:14:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.6ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:14:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.8ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:14:in `index'
+[active_model_serializers]   [1m[36mImage Load (1.0ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:14:in `index'
+[active_model_serializers]   [1m[36mImage Load (1.5ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:14:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.6ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:14:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:14:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (95.06ms)
+Completed 200 OK in 124ms (Views: 84.5ms | ActiveRecord: 34.1ms | Allocations: 33428)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-06-28 17:18:43 -0400
+Processing by Api::V1::UsersController#index as JSON
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from index at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:14)
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from index at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:14)
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:14:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.7ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:14:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:14:in `index'
+[active_model_serializers]   [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:14:in `index'
+[active_model_serializers]   [1m[36mCategory Load (1.8ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:14:in `index'
+[active_model_serializers]   [1m[36mImage Load (1.6ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:14:in `index'
+[active_model_serializers]   [1m[36mImage Load (1.1ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:14:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:14:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:14:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:14:in `index'
+[active_model_serializers]   [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."category_id" = $1[0m  [["category_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/users_controller.rb:14:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (71.63ms)
+Completed 200 OK in 81ms (Views: 70.9ms | ActiveRecord: 9.7ms | Allocations: 18663)
+
+
+Started POST "/api/v1/users" for ::1 at 2019-06-28 17:19:30 -0400
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"files"=>#<ActionDispatch::Http::UploadedFile:0x00007fc990f37f08 @tempfile=#<Tempfile:/var/folders/kh/9t0cfpld5w1cb9d4fclw1q2c0000gn/T/RackMultipart20190628-63258-uy08f0.jpg>, @original_filename="apple.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"files\"; filename=\"apple.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+Completed 500 Internal Server Error in 5179ms (ActiveRecord: 0.0ms | Allocations: 9454)
+
+
+  
+ArgumentError (unexpected prefix: #<ActionDispatch::Http::UploadedFile:0x00007fc990f37f08 @tempfile=#<Tempfile:/var/folders/kh/9t0cfpld5w1cb9d4fclw1q2c0000gn/T/RackMultipart20190628-63258-uy08f0.jpg>, @original_filename="apple.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"files\"; filename=\"apple.jpg\"\r\nContent-Type: image/jpeg\r\n">):
+  
+app/controllers/api/v1/users_controller.rb:29:in `new'
+app/controllers/api/v1/users_controller.rb:29:in `block in create'
+app/controllers/api/v1/users_controller.rb:24:in `open'
+app/controllers/api/v1/users_controller.rb:24:in `create'
+Started POST "/api/v1/users" for ::1 at 2019-06-28 17:21:34 -0400
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"files"=>#<ActionDispatch::Http::UploadedFile:0x00007fc991cec568 @tempfile=#<Tempfile:/var/folders/kh/9t0cfpld5w1cb9d4fclw1q2c0000gn/T/RackMultipart20190628-63258-u8royl.jpg>, @original_filename="apple.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"files\"; filename=\"apple.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from block in create at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:28)
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from block in create at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:28)
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.43ms)
+Completed 200 OK in 3269ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 10489)
+
+
+Started POST "/api/v1/users" for ::1 at 2019-06-28 17:22:18 -0400
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"files"=>#<ActionDispatch::Http::UploadedFile:0x00007fc991ade280 @tempfile=#<Tempfile:/var/folders/kh/9t0cfpld5w1cb9d4fclw1q2c0000gn/T/RackMultipart20190628-63258-18dnlto.jpg>, @original_filename="apple.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"files\"; filename=\"apple.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from block in create at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:28)
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from block in create at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:28)
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.7ms)
+Completed 200 OK in 3905ms (Views: 4.7ms | ActiveRecord: 0.0ms | Allocations: 10282)
+
+
+Started POST "/api/v1/users" for ::1 at 2019-06-28 17:23:21 -0400
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"files"=>#<ActionDispatch::Http::UploadedFile:0x00007fc991b1ef60 @tempfile=#<Tempfile:/var/folders/kh/9t0cfpld5w1cb9d4fclw1q2c0000gn/T/RackMultipart20190628-63258-loqq2g.jpg>, @original_filename="apple.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"files\"; filename=\"apple.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from block in create at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:28)
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from block in create at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:28)
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.81ms)
+Completed 200 OK in 3363ms (Views: 4.4ms | ActiveRecord: 0.0ms | Allocations: 10281)
+
+
+Started POST "/api/v1/users" for ::1 at 2019-06-28 17:24:20 -0400
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"files"=>#<ActionDispatch::Http::UploadedFile:0x00007fc991c46028 @tempfile=#<Tempfile:/var/folders/kh/9t0cfpld5w1cb9d4fclw1q2c0000gn/T/RackMultipart20190628-63258-1dj4rkf.jpg>, @original_filename="apple.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"files\"; filename=\"apple.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from block in create at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:28)
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from block in create at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:28)
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.38ms)
+Completed 200 OK in 5222ms (Views: 1.3ms | ActiveRecord: 0.0ms | Allocations: 10281)
+
+
+Started POST "/api/v1/users" for ::1 at 2019-06-28 17:24:52 -0400
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"files"=>#<ActionDispatch::Http::UploadedFile:0x00007fc99582a328 @tempfile=#<Tempfile:/var/folders/kh/9t0cfpld5w1cb9d4fclw1q2c0000gn/T/RackMultipart20190628-63258-zhfh9w.jpg>, @original_filename="apple.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"files\"; filename=\"apple.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from block in create at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:28)
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from block in create at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:28)
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.68ms)
+Completed 200 OK in 3295ms (Views: 2.8ms | ActiveRecord: 0.0ms | Allocations: 10250)
+
+
+Started POST "/api/v1/users" for ::1 at 2019-06-28 17:25:48 -0400
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"files"=>#<ActionDispatch::Http::UploadedFile:0x00007fc990e58fd8 @tempfile=#<Tempfile:/var/folders/kh/9t0cfpld5w1cb9d4fclw1q2c0000gn/T/RackMultipart20190628-63258-kndkaz.jpg>, @original_filename="apple.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"files\"; filename=\"apple.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from block in create at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:28)
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from block in create at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:28)
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.21ms)
+Completed 200 OK in 3565ms (Views: 3.6ms | ActiveRecord: 0.0ms | Allocations: 10250)
+
+
+Started POST "/api/v1/users" for ::1 at 2019-06-28 17:29:24 -0400
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"files"=>#<ActionDispatch::Http::UploadedFile:0x00007fc9950c7108 @tempfile=#<Tempfile:/var/folders/kh/9t0cfpld5w1cb9d4fclw1q2c0000gn/T/RackMultipart20190628-63258-9idjxh.jpg>, @original_filename="apple.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"files\"; filename=\"apple.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from block in create at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:28)
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from block in create at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:28)
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.94ms)
+Completed 200 OK in 8557ms (Views: 2.9ms | ActiveRecord: 0.0ms | Allocations: 10283)
+
+
+Started POST "/api/v1/users" for ::1 at 2019-06-28 17:31:25 -0400
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"files"=>#<ActionDispatch::Http::UploadedFile:0x00007fc995989ac0 @tempfile=#<Tempfile:/var/folders/kh/9t0cfpld5w1cb9d4fclw1q2c0000gn/T/RackMultipart20190628-63258-1wblwky.jpg>, @original_filename="apple.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"files\"; filename=\"apple.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from block in create at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:28)
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from block in create at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:28)
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.12ms)
+Completed 200 OK in 6822ms (Views: 3.3ms | ActiveRecord: 0.0ms | Allocations: 10309)
+
+
+Started POST "/api/v1/users" for ::1 at 2019-06-28 17:34:16 -0400
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"files"=>#<ActionDispatch::Http::UploadedFile:0x00007fc990ca5268 @tempfile=#<Tempfile:/var/folders/kh/9t0cfpld5w1cb9d4fclw1q2c0000gn/T/RackMultipart20190628-63258-1mac3af.jpg>, @original_filename="apple.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"files\"; filename=\"apple.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from block in create at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:28)
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from block in create at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:28)
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.49ms)
+Completed 200 OK in 4966ms (Views: 12.2ms | ActiveRecord: 0.0ms | Allocations: 10250)
+
+
+Started POST "/api/v1/users" for ::1 at 2019-06-28 17:35:55 -0400
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"files"=>#<ActionDispatch::Http::UploadedFile:0x00007fc9926a8d68 @tempfile=#<Tempfile:/var/folders/kh/9t0cfpld5w1cb9d4fclw1q2c0000gn/T/RackMultipart20190628-63258-13es3l2.jpg>, @original_filename="apple.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"files\"; filename=\"apple.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from block in create at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:28)
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from block in create at /Users/flatironschool/Development/MOD5/TranslateMe/TranslateMeBackend/app/controllers/api/v1/users_controller.rb:28)
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.39ms)
+Completed 200 OK in 3854ms (Views: 4.5ms | ActiveRecord: 0.0ms | Allocations: 10250)
+
+

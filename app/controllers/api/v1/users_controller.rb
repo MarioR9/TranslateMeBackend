@@ -1,5 +1,6 @@
 
-require 'tempfile'
+# require 'tempfile'
+require_relative '../inventory.rb'
 
         require "json"
         require "ibm_watson/visual_recognition_v3"
@@ -17,8 +18,8 @@ class Api::V1::UsersController < ApplicationController
         byebug
 
         visual_recognition = VisualRecognitionV3.new(
-        version: "2018-03-19",
-        iam_apikey: "zuJHfpYtm9gFQZDMLufjdFbWC8FSg121CVLVO9ZWYMRp"
+        version: VISUAL_VERSION,
+        iam_apikey: VISUAL_KEY
         )
 
         File.open(params[:files]) do |images_file|

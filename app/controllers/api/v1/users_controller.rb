@@ -13,18 +13,13 @@ class Api::V1::UsersController < ApplicationController
         render json: User.all, include: '**'
     end 
     def create 
-        # byebug
-
         visual_recognition = VisualRecognitionV3.new(
-        version: VISUAL_VERSION,
-        iam_apikey: VISUAL_KEY
-        )
+            version: VISUAL_VERSION,
+            iam_apikey: VISUAL_KEY
+          )
+          url= params[:image]
+          classes = visual_recognition.classify({url: url})   
+        render json: { result: classes.result}
 
-        File.open(params[:files]) do |images_file|
-            classes = visual_recognition.classify(
-            images_file: images_file
-            )    
-        render json: { result: classes.result , img: params[:files]}
-        end
     end
 end

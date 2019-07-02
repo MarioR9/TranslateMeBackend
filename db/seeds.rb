@@ -59,10 +59,3 @@ Image.create(input: "Casa", og_language:"Spanish", output: "House",tr_language: 
 
 
 
-
-
-
-
-
-
-

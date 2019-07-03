@@ -6,15 +6,18 @@ Rails.application.routes.draw do
       resources :users
       post '/login', to: 'users#login'
       get '/authenticate', to: 'users#authenticate'
-    
-      
-      
     end
   end
 
   namespace :api, defaults: {format: 'json'} do
     namespace :v1 do
       resources :categories
+    end
+  end
+
+  namespace :api, defaults: {format: 'json'} do
+    namespace :v1 do
+      resources :images
     end
   end
   

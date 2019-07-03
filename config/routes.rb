@@ -11,6 +11,8 @@ Rails.application.routes.draw do
 
   namespace :api, defaults: {format: 'json'} do
     namespace :v1 do
+      post '/visualRecognition', to: "categories#visualRecognition"
+      post '/translate', to: "categories#translate"
       resources :categories
     end
   end

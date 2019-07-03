@@ -4,7 +4,7 @@ class CreateCategories < ActiveRecord::Migration[6.0]
       t.string :title
       t.string :language
       t.integer :user_id
-
+      t.string :url
       t.timestamps
     end
   end

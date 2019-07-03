@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 2019_06_25_222738) do
     t.string "title"
     t.string "language"
     t.integer "user_id"
+    t.string "url"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -29,12 +30,14 @@ ActiveRecord::Schema.define(version: 2019_06_25_222738) do
     t.string "output"
     t.string "tr_language"
     t.integer "category_id"
+    t.string "url"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "users", force: :cascade do |t|
-    t.string "name"
+    t.string "username"
+    t.string "password_digest"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

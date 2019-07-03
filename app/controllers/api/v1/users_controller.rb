@@ -22,4 +22,32 @@ class Api::V1::UsersController < ApplicationController
         render json: { result: classes.result}
 
     end
+
+    def create
+        byebug
+        newUser = User.create(username: params[:username])
+        render newUser
+    end
+
+    def login 
+        user = User.all.find_by(username: params[:username])
+        if user && user.authenticate(params[:password])
+            payload = {user_id: user.id}
+            token = encode(payload)
+            byebug
+             render json: {user: user, token: token} 
+         else
+             render json: {message: "not an user"}
+         
+           end
+    end
+
+    def authenticate
+        token = request.headers["Authentication"].split(" ")[1]
+        payload = decode(token)
+        @user = User.find(payload["user_id"])
+          render json: @user 
+    end 
+
+
 end

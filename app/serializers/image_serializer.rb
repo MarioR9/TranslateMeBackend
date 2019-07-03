@@ -1,4 +1,4 @@
 class ImageSerializer < ActiveModel::Serializer
-  attributes :id, :og_language, :input, :tr_language,:output
+  attributes :id, :og_language, :input, :tr_language,:output,:url
   
 end

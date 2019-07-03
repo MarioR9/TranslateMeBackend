@@ -6,6 +6,7 @@ class CreateImages < ActiveRecord::Migration[6.0]
       t.string :output
       t.string :tr_language
       t.integer :category_id
+      t.string :url
       t.timestamps
     end
   end

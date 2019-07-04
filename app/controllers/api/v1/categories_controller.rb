@@ -48,7 +48,7 @@ class Api::V1::CategoriesController < ApplicationController
 
 
     def translate
-        byebug
+      
         language_translator = LanguageTranslatorV3.new(
             version: TRANSLATE_VERSION,
             iam_apikey: TRANSLATE_KEY  

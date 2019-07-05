@@ -9,6 +9,20 @@ class Api::V1::CategoriesController < ApplicationController
     def index
         render json:Category.all
     end
+
+    def create
+      
+        Category.create(title: params[:title], language: params[:language], user_id: params[:userId], url: params[:url])
+        user = User.find(params[:userId])
+       
+        if user 
+            categories = user.categories
+            render json: {user: user, categories: categories} 
+        else
+            render json: {message: "not an user"}
+        end
+        
+    end
     
     def visualRecognition 
       

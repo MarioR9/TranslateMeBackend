@@ -26,9 +26,7 @@ ActiveRecord::Schema.define(version: 2019_06_25_222738) do
 
   create_table "images", force: :cascade do |t|
     t.string "input"
-    t.string "og_language"
-    t.string "output"
-    t.string "tr_language"
+    t.string "tarlanguage"
     t.integer "category_id"
     t.string "url"
     t.datetime "created_at", precision: 6, null: false

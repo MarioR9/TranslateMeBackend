@@ -20,16 +20,16 @@ Category.create(title: "Herramientas", language: "Spanish", user_id: 1, url:"htt
 Category.create(title: "Casa", language: "Spanish", user_id: 4, url:"https://res.cloudinary.com/translateme/image/upload/v1562086925/Collection/apple_svnzpn.jpg")
 
 
-Image.create(input: "Couch", og_language:"English", output: "Sofa",tr_language: "Spanish", category_id:1, url:"https://res.cloudinary.com/translateme/image/upload/v1562086925/Collection/apple_svnzpn.jpg" )
-Image.create(input: "Table", og_language:"English", output: "Mesa",tr_language: "Spanish", category_id:1 , url:"https://res.cloudinary.com/translateme/image/upload/v1562086925/Collection/apple_svnzpn.jpg" )
-Image.create(input: "Chair", og_language:"English", output: "Silla",tr_language: "Spanish", category_id:3 , url:"https://res.cloudinary.com/translateme/image/upload/v1562086925/Collection/apple_svnzpn.jpg" )
-Image.create(input: "Chair", og_language:"English", output: "Silla",tr_language: "Spanish", category_id:2 , url:"https://res.cloudinary.com/translateme/image/upload/v1562086925/Collection/apple_svnzpn.jpg" )
-Image.create(input: "Marker", og_language:"English", output: "Marcador",tr_language: "Spanish", category_id:2, url:"https://res.cloudinary.com/translateme/image/upload/v1562086925/Collection/apple_svnzpn.jpg" )
-Image.create(input: "Desk", og_language:"English", output: "Escritorio",tr_language: "Spanish", category_id:2 , url:"https://res.cloudinary.com/translateme/image/upload/v1562086925/Collection/apple_svnzpn.jpg" )
-Image.create(input: "Carro", og_language:"Spanish", output: "Car",tr_language: "English", category_id:4, url:"https://res.cloudinary.com/translateme/image/upload/v1562086925/Collection/apple_svnzpn.jpg" )
-Image.create(input: "Maritillo", og_language:"Spanish", output: "Hammer",tr_language: "Englih", category_id:5, url:"https://res.cloudinary.com/translateme/image/upload/v1562086925/Collection/apple_svnzpn.jpg" )
-Image.create(input: "Cama", og_language:"Spanish", output: "Bed",tr_language: "Englsh", category_id:6, url:"https://res.cloudinary.com/translateme/image/upload/v1562086925/Collection/apple_svnzpn.jpg" )
-Image.create(input: "Casa", og_language:"Spanish", output: "House",tr_language: "Englsh", category_id:6, url:"https://res.cloudinary.com/translateme/image/upload/v1562086925/Collection/apple_svnzpn.jpg" )
+Image.create(input: "Couch", tarlanguage: "Spanish", category_id: 1, url:"https://res.cloudinary.com/translateme/image/upload/v1562086925/Collection/apple_svnzpn.jpg" )
+Image.create(input: "Table", tarlanguage:"English", category_id:1 , url:"https://res.cloudinary.com/translateme/image/upload/v1562086925/Collection/apple_svnzpn.jpg" )
+Image.create(input: "Chair", tarlanguage:"English", category_id:3 , url:"https://res.cloudinary.com/translateme/image/upload/v1562086925/Collection/apple_svnzpn.jpg" )
+Image.create(input: "Chair", tarlanguage:"English", category_id:2 , url:"https://res.cloudinary.com/translateme/image/upload/v1562086925/Collection/apple_svnzpn.jpg" )
+Image.create(input: "Marker", tarlanguage:"English", category_id:2, url:"https://res.cloudinary.com/translateme/image/upload/v1562086925/Collection/apple_svnzpn.jpg" )
+Image.create(input: "Desk", tarlanguage:"English", category_id:2 , url:"https://res.cloudinary.com/translateme/image/upload/v1562086925/Collection/apple_svnzpn.jpg" )
+Image.create(input: "Carro", tarlanguage:"Spanish", category_id:4, url:"https://res.cloudinary.com/translateme/image/upload/v1562086925/Collection/apple_svnzpn.jpg" )
+Image.create(input: "Maritillo", tarlanguage:"Spanish", category_id:5, url:"https://res.cloudinary.com/translateme/image/upload/v1562086925/Collection/apple_svnzpn.jpg" )
+Image.create(input: "Cama", tarlanguage:"Spanish", category_id:6, url:"https://res.cloudinary.com/translateme/image/upload/v1562086925/Collection/apple_svnzpn.jpg" )
+Image.create(input: "Casa", tarlanguage:"Spanish", category_id:6, url:"https://res.cloudinary.com/translateme/image/upload/v1562086925/Collection/apple_svnzpn.jpg" )
 
 
 

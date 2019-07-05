@@ -2,8 +2,9 @@
 class Api::V1::UsersController < ApplicationController
 
     def index 
-    
+        
         render json: User.all, include: '**'
+    
     end 
  
     def create
@@ -12,6 +13,7 @@ class Api::V1::UsersController < ApplicationController
     end
 
     def login 
+       
         user = User.all.find_by(username: params[:username])
         if user && user.authenticate(params[:password])
                 payload = {user_id: user.id}

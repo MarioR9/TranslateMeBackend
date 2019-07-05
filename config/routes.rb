@@ -13,6 +13,8 @@ Rails.application.routes.draw do
     namespace :v1 do
       post '/visualRecognition', to: "categories#visualRecognition"
       post '/translate', to: "categories#translate"
+      post '/findCategories', to: "categories#findCategories"
+      post '/dupCategories', to: "categories#dupCategories"
       resources :categories
     end
   end

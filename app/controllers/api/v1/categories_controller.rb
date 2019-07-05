@@ -7,7 +7,29 @@ include IBMWatson
 class Api::V1::CategoriesController < ApplicationController
     
     def index
+        
         render json:Category.all
+    end
+
+    def findCategories
+      
+        user = User.all.find(params[:userId])
+        categories = user.categories
+        render json: categories
+    end
+
+    def dupCategories
+        
+        byebug
+        copiedCate = Category.find([params[:cateId]]).dup
+        copiedCate.save
+        copiedCate.images = Category.find(params[:id]).images.dup
+        copiedCate.save
+        copiedCate.user_id = params[:userId]
+        copiedCate.save
+
+        user = User.find(params[:userId])       
+        render json: user
     end
 
     def create
@@ -25,7 +47,7 @@ class Api::V1::CategoriesController < ApplicationController
     end
     
     def visualRecognition 
-      
+     
         visual_recognition = VisualRecognitionV3.new(
             version: VISUAL_VERSION,
             iam_apikey: VISUAL_KEY

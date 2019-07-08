@@ -6,10 +6,10 @@ class Api::V1::ImagesController < ApplicationController
     end
 
    def create 
-    byebug
+    
     Image.create(input: params[:input], tarlanguage: params[:tarlanguage], category_id: params[:cateId], url: params[:imgUrl])
-    cate = Category.all
-    render json: cate
+    cate = Category.find(params[:cateId])
+    render json: cate.images
    end 
 
 end

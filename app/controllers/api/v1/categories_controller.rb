@@ -10,7 +10,12 @@ class Api::V1::CategoriesController < ApplicationController
         
         render json:Category.all
     end
-
+    
+    def findCategory
+        @cate = Category.find(params[:cateId])
+        render json: @cate.images
+    end
+    
     def findCategories
       
         user = User.all.find(params[:userId])
@@ -19,17 +24,27 @@ class Api::V1::CategoriesController < ApplicationController
     end
 
     def dupCategories
-        
-        byebug
-        copiedCate = Category.find([params[:cateId]]).dup
-        copiedCate.save
-        copiedCate.images = Category.find(params[:id]).images.dup
-        copiedCate.save
+        if User.find(params[:userId]).categories.exists?(params[:cateId].to_i)
+            render json: {message: "Included Category"}
+        else
+        counter = 0
+        copiedCate = Category.find(params[:cateId].to_i).clone
+      
         copiedCate.user_id = params[:userId]
         copiedCate.save
+        cateImg = Category.find(params[:cateId].to_i).images
+        while counter < cateImg.length do
+           
+            counter +=1
+            Image.create(input: cateImg[counter].input, tarlanguage: cateImg[counter].tarlanguage, url: cateImg[counter].url, category_id: copiedCate.id)
+            break
+        end
 
-        user = User.find(params[:userId])       
-        render json: user
+        user = User.find(params[:userId])  
+        categories = user.categories    
+        render json: {user: user, categoris: categories}
+        
+        end
     end
 
     def create
@@ -47,7 +62,7 @@ class Api::V1::CategoriesController < ApplicationController
     end
     
     def visualRecognition 
-     
+      
         visual_recognition = VisualRecognitionV3.new(
             version: VISUAL_VERSION,
             iam_apikey: VISUAL_KEY
@@ -56,7 +71,7 @@ class Api::V1::CategoriesController < ApplicationController
           classes = visual_recognition.classify({url: url})
           result = classes.result
          
-          @hashOfResults = result.first[1][0].first[1].first["classes"].select { |hash| hash["score"] >=  0.9 }
+          @hashOfResults = result.first[1][0].first[1].first["classes"].select { |hash| hash["score"] >=  0.5}
           @arryOfResults = @hashOfResults.map {|result| result["class"]}
         if params[:oglanguage] == "en"
             render json: {result: classes.result, arrOfRes: @arryOfResults}

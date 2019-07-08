@@ -15,6 +15,7 @@ Rails.application.routes.draw do
       post '/translate', to: "categories#translate"
       post '/findCategories', to: "categories#findCategories"
       post '/dupCategories', to: "categories#dupCategories"
+      post '/findCategory', to: "categories#findCategory"
       resources :categories
     end
   end

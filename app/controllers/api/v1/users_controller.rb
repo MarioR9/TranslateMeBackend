@@ -36,11 +36,14 @@ class Api::V1::UsersController < ApplicationController
     end
 
     def authenticate
-      
+
         token = request.headers["Authentication"].split(" ")[1]
         payload = decode(token)
         @user = User.find(payload["user_id"])
-          render json: @user 
+        categories = @user.categories
+        payload = {user_id: @user.id}
+        token = encode(payload)
+        render json: {user: @user, categories: categories, token: token } 
     end 
 
 

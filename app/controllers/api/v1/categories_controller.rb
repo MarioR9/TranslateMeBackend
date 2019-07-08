@@ -10,7 +10,12 @@ class Api::V1::CategoriesController < ApplicationController
         
         render json:Category.all
     end
-
+    
+    def findCategory
+        @cate = Category.find(params[:cateId])
+        render json: @cate.images
+    end
+    
     def findCategories
       
         user = User.all.find(params[:userId])
@@ -20,7 +25,7 @@ class Api::V1::CategoriesController < ApplicationController
 
     def dupCategories
         
-        byebug
+      
         copiedCate = Category.find([params[:cateId]]).dup
         copiedCate.save
         copiedCate.images = Category.find(params[:id]).images.dup
@@ -47,7 +52,7 @@ class Api::V1::CategoriesController < ApplicationController
     end
     
     def visualRecognition 
-     
+      
         visual_recognition = VisualRecognitionV3.new(
             version: VISUAL_VERSION,
             iam_apikey: VISUAL_KEY
@@ -56,7 +61,7 @@ class Api::V1::CategoriesController < ApplicationController
           classes = visual_recognition.classify({url: url})
           result = classes.result
          
-          @hashOfResults = result.first[1][0].first[1].first["classes"].select { |hash| hash["score"] >=  0.9 }
+          @hashOfResults = result.first[1][0].first[1].first["classes"].select { |hash| hash["score"] >=  0.5}
           @arryOfResults = @hashOfResults.map {|result| result["class"]}
         if params[:oglanguage] == "en"
             render json: {result: classes.result, arrOfRes: @arryOfResults}

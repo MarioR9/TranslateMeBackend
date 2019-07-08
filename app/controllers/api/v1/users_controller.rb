@@ -19,7 +19,7 @@ class Api::V1::UsersController < ApplicationController
                 payload = {user_id: user.id}
                 token = encode(payload)
                 categories = user.categories
-            render json: {user: user, token: token, categories: categories} 
+            render json: {user: user, token: token, categories: categories } 
         else
              render json: {message: "not an user"}
          

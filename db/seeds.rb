@@ -58,4 +58,3 @@ Image.create(input: "Casa", tarlanguage:"Spanish", category_id:6, url:"https://c
 
 
 
-

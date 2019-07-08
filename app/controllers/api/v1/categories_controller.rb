@@ -113,4 +113,17 @@ class Api::V1::CategoriesController < ApplicationController
        
     end
 
+    def findModel
+        byebug
+        language_translator = LanguageTranslatorV3.new(
+            version: TRANSLATE_VERSION,
+            iam_apikey: TRANSLATE_KEY
+          )
+          models = language_translator.list_models(source: params[:oglanguage]["value"])
+          render json: {models: models.result}
+          
+          
+          
+    end
+
 end

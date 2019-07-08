@@ -16,6 +16,7 @@ Rails.application.routes.draw do
       post '/findCategories', to: "categories#findCategories"
       post '/dupCategories', to: "categories#dupCategories"
       post '/findCategory', to: "categories#findCategory"
+      post '/findModel', to: "categories#findModel"
       resources :categories
     end
   end

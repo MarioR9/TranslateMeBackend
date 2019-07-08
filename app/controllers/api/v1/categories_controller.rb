@@ -24,17 +24,27 @@ class Api::V1::CategoriesController < ApplicationController
     end
 
     def dupCategories
-        
+        if User.find(params[:userId]).categories.exists?(params[:cateId].to_i)
+            render json: {message: "Included Category"}
+        else
+        counter = 0
+        copiedCate = Category.find(params[:cateId].to_i).clone
       
-        copiedCate = Category.find([params[:cateId]]).dup
-        copiedCate.save
-        copiedCate.images = Category.find(params[:id]).images.dup
-        copiedCate.save
         copiedCate.user_id = params[:userId]
         copiedCate.save
+        cateImg = Category.find(params[:cateId].to_i).images
+        while counter < cateImg.length do
+           
+            counter +=1
+            Image.create(input: cateImg[counter].input, tarlanguage: cateImg[counter].tarlanguage, url: cateImg[counter].url, category_id: copiedCate.id)
+            break
+        end
 
-        user = User.find(params[:userId])       
-        render json: user
+        user = User.find(params[:userId])  
+        categories = user.categories    
+        render json: {user: user, categoris: categories}
+        
+        end
     end
 
     def create

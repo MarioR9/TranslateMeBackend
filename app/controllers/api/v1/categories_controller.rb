@@ -24,25 +24,26 @@ class Api::V1::CategoriesController < ApplicationController
     end
 
     def dupCategories
+
+        
         if User.find(params[:userId]).categories.exists?(params[:cateId].to_i)
             render json: {message: "Included Category"}
         else
-        counter = 0
-        copiedCate = Category.find(params[:cateId].to_i).clone
-      
-        copiedCate.user_id = params[:userId]
-        copiedCate.save
-        cateImg = Category.find(params[:cateId].to_i).images
-        while counter < cateImg.length do
-           
-            counter +=1
-            Image.create(input: cateImg[counter].input, tarlanguage: cateImg[counter].tarlanguage, url: cateImg[counter].url, category_id: copiedCate.id)
-            break
+        i = 0
+        copiedCate = Category.find(params[:cateId].to_i)
+         
+            
+        newCate = Category.create(title: copiedCate.title, language: copiedCate.language, user_id: params[:userId], url: copiedCate.url)
+        cateImgLength = Category.find(params[:cateId].to_i).images.length
+        while i < cateImgLength do
+          
+            Image.create(input: Category.find(params[:cateId].to_i).images[i].input, tarlanguage: Category.find(params[:cateId].to_i).images[i].tarlanguage, url: Category.find(params[:cateId].to_i).images[i].url, category_id: newCate.id)
+            i += 1     
         end
 
         user = User.find(params[:userId])  
         categories = user.categories    
-        render json: {user: user, categoris: categories}
+        render json: {user: user, categories: categories}
         
         end
     end
@@ -53,8 +54,10 @@ class Api::V1::CategoriesController < ApplicationController
         user = User.find(params[:userId])
        
         if user 
+            payload = {user_id: user.id}
+            token = encode(payload)
             categories = user.categories
-            render json: {user: user, categories: categories} 
+            render json: {user: user, categories: categories, token: token} 
         else
             render json: {message: "not an user"}
         end
@@ -114,7 +117,7 @@ class Api::V1::CategoriesController < ApplicationController
     end
 
     def findModel
-        byebug
+        # byebug
         language_translator = LanguageTranslatorV3.new(
             version: TRANSLATE_VERSION,
             iam_apikey: TRANSLATE_KEY
@@ -126,4 +129,13 @@ class Api::V1::CategoriesController < ApplicationController
           
     end
 
+    def destroy
+        
+        Category.find(params[:id]).delete
+        user = User.find(params[:userId])  
+        categories = user.categories    
+        render json: {user: user, categories: categories}
+         
+      end
+    
 end

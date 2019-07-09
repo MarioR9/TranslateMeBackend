@@ -12,12 +12,13 @@ class Api::V1::CategoriesController < ApplicationController
     end
     
     def findCategory
+    
         @cate = Category.find(params[:cateId])
         render json: @cate.images
     end
     
     def findCategories
-      
+        
         user = User.all.find(params[:userId])
         categories = user.categories
         render json: categories
@@ -44,9 +45,9 @@ class Api::V1::CategoriesController < ApplicationController
         user = User.find(params[:userId])  
         payload = {user_id: user.id}
         token = encode(payload)
-        
+        lastCate = user.categories.last 
         categories = user.categories    
-        render json: {user: user, categories: categories, token: token}
+        render json: {user: user, categories: categories, token: token, newDup: lastCate}
         
         end
     end

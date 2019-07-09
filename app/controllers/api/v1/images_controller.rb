@@ -16,8 +16,11 @@ class Api::V1::ImagesController < ApplicationController
         
     Image.find(params[:id]).delete
     user = User.find(params[:userId])  
-    categories = user.categories    
-    render json: {user: user, categories: categories}
+    payload = {user_id: user.id}
+    token = encode(payload)
+    categories = user.categories
+        
+    render json: {user: user, token: token, categories: categories } 
      
   end
   

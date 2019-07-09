@@ -12,4 +12,13 @@ class Api::V1::ImagesController < ApplicationController
     render json: cate.images
    end 
 
+   def destroy
+        
+    Image.find(params[:id]).delete
+    user = User.find(params[:userId])  
+    categories = user.categories    
+    render json: {user: user, categories: categories}
+     
+  end
+  
 end

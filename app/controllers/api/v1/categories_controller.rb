@@ -42,8 +42,11 @@ class Api::V1::CategoriesController < ApplicationController
         end
 
         user = User.find(params[:userId])  
+        payload = {user_id: user.id}
+        token = encode(payload)
+        
         categories = user.categories    
-        render json: {user: user, categories: categories}
+        render json: {user: user, categories: categories, token: token}
         
         end
     end

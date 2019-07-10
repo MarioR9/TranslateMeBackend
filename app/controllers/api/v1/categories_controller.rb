@@ -12,7 +12,7 @@ class Api::V1::CategoriesController < ApplicationController
     end
     
     def findCategory
-    
+    # byebug
         @cate = Category.find(params[:cateId])
         render json: @cate.images
     end
@@ -60,8 +60,9 @@ class Api::V1::CategoriesController < ApplicationController
         if user 
             payload = {user_id: user.id}
             token = encode(payload)
+            lastCate = user.categories.last 
             categories = user.categories
-            render json: {user: user, categories: categories, token: token} 
+            render json: {user: user, categories: categories, token: token,newDup: lastCate} 
         else
             render json: {message: "not an user"}
         end
@@ -99,7 +100,7 @@ class Api::V1::CategoriesController < ApplicationController
                 i += 1
             end
             arr
-            
+        
             render json: {result: classes.result, arrOfRes: @arryOfResults ,translation: arr}
          end        
     end

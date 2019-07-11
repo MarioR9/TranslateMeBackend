@@ -2,6 +2,8 @@ class CreateImages < ActiveRecord::Migration[6.0]
   def change
     create_table :images do |t|
       t.string :input
+      t.string :orglanguage
+      t.string :original
       t.string :tarlanguage
       t.integer :category_id
       t.string :url

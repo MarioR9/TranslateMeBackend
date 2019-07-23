@@ -7,7 +7,7 @@ class Api::V1::ImagesController < ApplicationController
 
    def create 
     
-    Image.create(input: params[:input], tarlanguage: params[:tarlanguage], category_id: params[:cateId], url: params[:imgUrl])
+    Image.create(original: params[:original],orglanguage: params[:orglanguage],input: params[:input], tarlanguage: params[:tarlanguage], category_id: params[:cateId], url: params[:imgUrl])
     cate = Category.find(params[:cateId])
     render json: cate.images
    end 

@@ -32,6 +32,8 @@ ActiveRecord::Schema.define(version: 2019_07_10_151955) do
 
   create_table "images", force: :cascade do |t|
     t.string "input"
+    t.string "orglanguage"
+    t.string "original"
     t.string "tarlanguage"
     t.integer "category_id"
     t.string "url"

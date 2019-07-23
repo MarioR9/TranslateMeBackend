@@ -12,141 +12,50 @@ User.create(username: "Tonny", password: "password1")
 User.create(username: "Ray", password: "password2")
 User.create(username: "Erick", password: "password3")
 
-Category.create(title: "House", language: "English", user_id: 1, url:"https://res.cloudinary.com/translateme/image/upload/v1562816903/DefaultPics/hdtr6ein3yq8jcoypg4t.png")
-Category.create(title: "Office", language: "English", user_id: 2, url:"https://res.cloudinary.com/translateme/image/upload/v1562816903/DefaultPics/hdtr6ein3yq8jcoypg4t.png")
-Category.create(title: "Kitchen", language: "English", user_id: 3, url:"https://res.cloudinary.com/translateme/image/upload/v1562816903/DefaultPics/hdtr6ein3yq8jcoypg4t.png")
-Category.create(title: "Garaje", language: "Spanish", user_id: 4, url:"https://res.cloudinary.com/translateme/image/upload/v1562816903/DefaultPics/hdtr6ein3yq8jcoypg4t.png")
-Category.create(title: "Herramientas", language: "Spanish", user_id: 1, url:"https://res.cloudinary.com/translateme/image/upload/v1562816903/DefaultPics/hdtr6ein3yq8jcoypg4t.png")
-Category.create(title: "Casa", language: "Spanish", user_id: 4, url:"https://res.cloudinary.com/translateme/image/upload/v1562816903/DefaultPics/hdtr6ein3yq8jcoypg4t.png")
+Category.create(title: "House Items", language: "English", user_id: 1, url:"https://res.cloudinary.com/translateme/image/upload/v1562816903/DefaultPics/hdtr6ein3yq8jcoypg4t.png")
+Image.create(original: "table",orglanguage:"English", input: "mesa", tarlanguage: "Spanish", category_id: 1, url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsFNCcCJsZCCnSHmA3MvIwmxgjGymfeXoMmW2O5JizWpxsWqQd" )
+Image.create(original: "lamp",orglanguage:"English", input: "Lampara", tarlanguage: "Spanish", category_id: 1, url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB3LA7kK3o5EGvUOJmBQLS7PHoVBQM89Y21TQyr7CuEFAboMYJ" )
+Image.create(original: "bed",orglanguage:"English", input: "cama", tarlanguage: "Spanish", category_id: 1, url:"https://www.ikea.com/PIAimages/0638591_PE699025_S5.JPG" )
+Image.create(original: "side bed table",orglanguage:"English", input: "mesa de cama", tarlanguage: "Spanish", category_id: 1, url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_BftEaoKzjt9Y_vq9mwe5VqAbLPH7ScYgqZveIKVfZudrUy1I")
+Image.create(original: "sofa",orglanguage:"English", input: "sofa", tarlanguage: "Spanish", category_id: 1, url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0E85p07ArvArLE7z8F9oaJAD_lFc5oFFTHDX4Jlk4VR3rpnj6")   
+Image.create(original: "mirror",orglanguage:"English", input: "espejo", tarlanguage: "Spanish", category_id: 1, url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTqVKWZWdnOwT1sE0yYbptw0TPR9CdO3wcMQIqDkLhpZ0dqQni" )
 
-Category.create(title: "House", language: "English", user_id: 4, url:"https://res.cloudinary.com/translateme/image/upload/v1562816903/DefaultPics/hdtr6ein3yq8jcoypg4t.png")
-Category.create(title: "Office", language: "English", user_id: 1, url:"https://res.cloudinary.com/translateme/image/upload/v1562816903/DefaultPics/hdtr6ein3yq8jcoypg4t.png")
-Category.create(title: "Kitchen", language: "English", user_id: 4, url:"https://res.cloudinary.com/translateme/image/upload/v1562816903/DefaultPics/hdtr6ein3yq8jcoypg4t.png")
-Category.create(title: "Garaje", language: "Spanish", user_id: 2, url:"https://res.cloudinary.com/translateme/image/upload/v1562816903/DefaultPics/hdtr6ein3yq8jcoypg4t.png")
-Category.create(title: "Herramientas", language: "Spanish", user_id: 3, url:"https://res.cloudinary.com/translateme/image/upload/v1562816903/DefaultPics/hdtr6ein3yq8jcoypg4t.png")
-Category.create(title: "Casa", language: "Spanish", user_id: 1, url:"https://res.cloudinary.com/translateme/image/upload/v1562816903/DefaultPics/hdtr6ein3yq8jcoypg4t.png")
+Category.create(title: "Animals", language: "English", user_id: 1, url:"https://res.cloudinary.com/translateme/image/upload/v1562816903/DefaultPics/hdtr6ein3yq8jcoypg4t.png")
+Image.create(original: "cat",orglanguage:"English",input: "gato", tarlanguage:"Spanish", category_id:2 , url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4E--6yCq8vJwcGxfWGTG_qIUdAtwabaPKRhQl1qNb0cRgqD1f")
+Image.create(original: "dog",orglanguage:"English",input: "perro", tarlanguage:"Spanish", category_id:2 , url:"https://bucket1.glanacion.com/anexos/fotos/02/2749002w380.jpg")
 
-Category.create(title: "House", language: "English", user_id: 2, url:"https://res.cloudinary.com/translateme/image/upload/v1562816903/DefaultPics/hdtr6ein3yq8jcoypg4t.png")
-Category.create(title: "Office", language: "English", user_id: 3, url:"https://res.cloudinary.com/translateme/image/upload/v1562816903/DefaultPics/hdtr6ein3yq8jcoypg4t.png")
-Category.create(title: "Kitchen", language: "English", user_id: 1, url:"https://res.cloudinary.com/translateme/image/upload/v1562816903/DefaultPics/hdtr6ein3yq8jcoypg4t.png")
-Category.create(title: "Garaje", language: "Spanish", user_id: 1, url:"https://res.cloudinary.com/translateme/image/upload/v1562816903/DefaultPics/hdtr6ein3yq8jcoypg4t.png")
-Category.create(title: "Herramientas", language: "Spanish", user_id: 4, url:"https://res.cloudinary.com/translateme/image/upload/v1562816903/DefaultPics/hdtr6ein3yq8jcoypg4t.png")
-Category.create(title: "Casa", language: "Spanish", user_id: 1, url:"https://res.cloudinary.com/translateme/image/upload/v1562816903/DefaultPics/hdtr6ein3yq8jcoypg4t.png")
+Category.create(title: "House Items", language: "English", user_id: 2, url: "https://res.cloudinary.com/translateme/image/upload/v1562816903/DefaultPics/hdtr6ein3yq8jcoypg4t.png")
+Image.create(original: "table",orglanguage:"English",input: "mesa", tarlanguage: "Spanish", category_id: 3, url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsFNCcCJsZCCnSHmA3MvIwmxgjGymfeXoMmW2O5JizWpxsWqQd" )
+Image.create(original: "lamp",orglanguage:"English",input: "Lampara", tarlanguage: "Spanish", category_id: 3, url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB3LA7kK3o5EGvUOJmBQLS7PHoVBQM89Y21TQyr7CuEFAboMYJ" )
+Image.create(original: "bed",orglanguage:"English",input: "cama", tarlanguage: "Spanish", category_id: 3, url:"https://www.ikea.com/PIAimages/0638591_PE699025_S5.JPG" )
+Image.create(original: "side bed table",orglanguage:"English",input: "mesa de cama", tarlanguage: "Spanish", category_id: 3, url:"https://images-na.ssl-images-amazon.com/images/I/81s0E8ONQGL._SX425_.jpg" )
+Image.create(original: "sofa",orglanguage:"English",input: "sofa", tarlanguage: "Spanish", category_id: 3, url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0E85p07ArvArLE7z8F9oaJAD_lFc5oFFTHDX4Jlk4VR3rpnj6") 
+Image.create(original: "mirror",orglanguage:"English",input: "espejo", tarlanguage: "Spanish", category_id: 3, url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTqVKWZWdnOwT1sE0yYbptw0TPR9CdO3wcMQIqDkLhpZ0dqQni")
 
+Category.create(title: "Animals", language: "English", user_id: 2, url: "https://res.cloudinary.com/translateme/image/upload/v1562816903/DefaultPics/hdtr6ein3yq8jcoypg4t.png")
+Image.create(original: "cat",orglanguage:"English",input: "gato", tarlanguage:"Spanish", category_id:4, url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4E--6yCq8vJwcGxfWGTG_qIUdAtwabaPKRhQl1qNb0cRgqD1f" )
+Image.create(original: "dog",orglanguage:"English",input: "perro", tarlanguage:"Spanish", category_id:4 , url:"https://bucket1.glanacion.com/anexos/fotos/02/2749002w380.jpg")
 
-Image.create(input: "Couch", tarlanguage: "Spanish", category_id: 2, url:"https://png2.kisspng.com/sh/844421cab6c5e262428eac300635ff3e/L0KzQYm3UsE1N5l3j5H0aYP2gLBuTfNwfZRtReV4ZnGwcrbrTfNpaZp3Rd5ydnnxd375jB9uNZd6itDydIX1dX76jBZiNWZmUKZvOXO4RoSAhPI5Nmo5SaYDM0G2QYa4WMY3PGI4S6Y5N0WxgLBu/kisspng-couch-sofa-bed-chair-living-room-furniture-sofa-5a84f9c5637db8.9414831315186641334075.png" )
-Image.create(input: "Table", tarlanguage:"English", category_id:2 , url:"https://www.freeiconspng.com/uploads/table-png-transparent-image-12.jpg" )
-Image.create(input: "Chair", tarlanguage:"English", category_id:4 , url:"http://www.pngall.com/wp-content/uploads/2016/04/Chair-Download-PNG.png" )
-Image.create(input: "Chair", tarlanguage:"English", category_id:1 , url:"http://www.pngall.com/wp-content/uploads/2016/04/Chair-PNG-Picture.png" )
-Image.create(input: "Marker", tarlanguage:"English", category_id:1, url:"https://sep.yimg.com/ay/yhst-65953260967716/expo-dry-erase-marker-chisel-tip-low-odor-ink-2.png" )
-Image.create(input: "Desk", tarlanguage:"English", category_id:3 , url:"http://www.pngall.com/wp-content/uploads/2/Desk-PNG-Clipart.png" )
-Image.create(input: "Carro", tarlanguage:"Spanish", category_id:5, url:"https://www.sccpre.cat/mypng/full/143-1438807_contratados-para-levar-carro-de-luxo-para-o.png" )
-Image.create(input: "Maritillo", tarlanguage:"Spanish", category_id:6, url:"https://www.bellota.com/var/site/storage/images/_aliases/large/7/1/2/3/33217-1-esl-EU/800213.png" )
-Image.create(input: "Cama", tarlanguage:"Spanish", category_id:6, url:"https://marcimex.vteximg.com.br/arquivos/ids/159014-700-700/6062_cama-viviana2P_foto1.jpg?v=636821440914300000" )
-Image.create(input: "Casa", tarlanguage:"Spanish", category_id:5, url:"https://candysdirt.com/wp-content/uploads/2019/07/74ac6372b9157edaf38087c1513faf38l-m0xd-w1020_h770_q80.jpg" )
+Category.create(title: "House Items", language: "English", user_id: 3, url: "https://res.cloudinary.com/translateme/image/upload/v1562816903/DefaultPics/hdtr6ein3yq8jcoypg4t.png")
+Image.create(original: "table",orglanguage:"English",input: "mesa", tarlanguage: "Spanish", category_id: 5, url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsFNCcCJsZCCnSHmA3MvIwmxgjGymfeXoMmW2O5JizWpxsWqQd" )
+Image.create(original: "lamp",orglanguage:"English",input: "Lampara", tarlanguage: "Spanish", category_id: 5, url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB3LA7kK3o5EGvUOJmBQLS7PHoVBQM89Y21TQyr7CuEFAboMYJ" )
+Image.create(original: "bed",orglanguage:"English",input: "cama", tarlanguage: "Spanish", category_id: 5, url:"https://www.ikea.com/PIAimages/0638591_PE699025_S5.JPG" )
+Image.create(original: "side bed table",orglanguage:"English",input: "mesa de cama", tarlanguage: "Spanish", category_id: 5, url:"https://images-na.ssl-images-amazon.com/images/I/81s0E8ONQGL._SX425_.jpg" )
+Image.create(original: "sofa",orglanguage:"English",input: "sofa", tarlanguage: "Spanish", category_id: 5, url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0E85p07ArvArLE7z8F9oaJAD_lFc5oFFTHDX4Jlk4VR3rpnj6") 
+Image.create(original: "mirror",orglanguage:"English",input: "espejo", tarlanguage: "Spanish", category_id: 5, url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTqVKWZWdnOwT1sE0yYbptw0TPR9CdO3wcMQIqDkLhpZ0dqQni" )
 
+Category.create(title: "Animals", language: "English", user_id: 3, url: "https://res.cloudinary.com/translateme/image/upload/v1562816903/DefaultPics/hdtr6ein3yq8jcoypg4t.png")
+Image.create(original: "cat",orglanguage:"English",input: "gato", tarlanguage:"Spanish", category_id:6 , url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4E--6yCq8vJwcGxfWGTG_qIUdAtwabaPKRhQl1qNb0cRgqD1f" )
+Image.create(original: "dog",orglanguage:"English",input: "perro", tarlanguage:"Spanish", category_id:6 , url:"https://bucket1.glanacion.com/anexos/fotos/02/2749002w380.jpg")
 
-Image.create(input: "Couch", tarlanguage: "Spanish", category_id: 6, url:"https://png2.kisspng.com/sh/844421cab6c5e262428eac300635ff3e/L0KzQYm3UsE1N5l3j5H0aYP2gLBuTfNwfZRtReV4ZnGwcrbrTfNpaZp3Rd5ydnnxd375jB9uNZd6itDydIX1dX76jBZiNWZmUKZvOXO4RoSAhPI5Nmo5SaYDM0G2QYa4WMY3PGI4S6Y5N0WxgLBu/kisspng-couch-sofa-bed-chair-living-room-furniture-sofa-5a84f9c5637db8.9414831315186641334075.png" )
-Image.create(input: "Table", tarlanguage:"English", category_id:6 , url:"https://www.freeiconspng.com/uploads/table-png-transparent-image-12.jpg" )
-Image.create(input: "Chair", tarlanguage:"English", category_id:4 , url:"http://www.pngall.com/wp-content/uploads/2016/04/Chair-Download-PNG.png" )
-Image.create(input: "Chair", tarlanguage:"English", category_id:4 , url:"http://www.pngall.com/wp-content/uploads/2016/04/Chair-PNG-Picture.png" )
-Image.create(input: "Marker", tarlanguage:"English", category_id:2, url:"https://sep.yimg.com/ay/yhst-65953260967716/expo-dry-erase-marker-chisel-tip-low-odor-ink-2.png" )
-Image.create(input: "Desk", tarlanguage:"English", category_id:2 , url:"http://www.pngall.com/wp-content/uploads/2/Desk-PNG-Clipart.png" )
-Image.create(input: "Carro", tarlanguage:"Spanish", category_id:5, url:"https://www.sccpre.cat/mypng/full/143-1438807_contratados-para-levar-carro-de-luxo-para-o.png" )
-Image.create(input: "Maritillo", tarlanguage:"Spanish", category_id:3, url:"https://www.bellota.com/var/site/storage/images/_aliases/large/7/1/2/3/33217-1-esl-EU/800213.png" )
-Image.create(input: "Cama", tarlanguage:"Spanish", category_id:1, url:"https://marcimex.vteximg.com.br/arquivos/ids/159014-700-700/6062_cama-viviana2P_foto1.jpg?v=636821440914300000" )
-Image.create(input: "Casa", tarlanguage:"Spanish", category_id:1, url:"https://candysdirt.com/wp-content/uploads/2019/07/74ac6372b9157edaf38087c1513faf38l-m0xd-w1020_h770_q80.jpg" )
+Category.create(title: "House Items", language: "English", user_id: 4, url: "https://res.cloudinary.com/translateme/image/upload/v1562816903/DefaultPics/hdtr6ein3yq8jcoypg4t.png")
+Image.create(original: "table",orglanguage:"English",input: "mesa", tarlanguage: "Spanish", category_id: 7, url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsFNCcCJsZCCnSHmA3MvIwmxgjGymfeXoMmW2O5JizWpxsWqQd" )
+Image.create(original: "lamp",orglanguage:"English",input: "Lampara", tarlanguage: "Spanish", category_id: 7, url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB3LA7kK3o5EGvUOJmBQLS7PHoVBQM89Y21TQyr7CuEFAboMYJ" )
+Image.create(original: "bed",orglanguage:"English",input: "cama", tarlanguage: "Spanish", category_id: 7, url:"https://www.ikea.com/PIAimages/0638591_PE699025_S5.JPG" )
+Image.create(original: "side bed table",orglanguage:"English",input: "mesa de cama", tarlanguage: "Spanish", category_id: 7, url:"https://images-na.ssl-images-amazon.com/images/I/81s0E8ONQGL._SX425_.jpg" )
+Image.create(original: "sofa",orglanguage:"English",input: "sofa", tarlanguage: "Spanish", category_id: 7, url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0E85p07ArvArLE7z8F9oaJAD_lFc5oFFTHDX4Jlk4VR3rpnj6")
+Image.create(original: "mirror", orglanguage: "English", input: "espejo", tarlanguage: "Spanish", category_id: 7, url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTqVKWZWdnOwT1sE0yYbptw0TPR9CdO3wcMQIqDkLhpZ0dqQni")
 
-
-Image.create(input: "Couch", tarlanguage: "Spanish", category_id: 4, url:"https://png2.kisspng.com/sh/844421cab6c5e262428eac300635ff3e/L0KzQYm3UsE1N5l3j5H0aYP2gLBuTfNwfZRtReV4ZnGwcrbrTfNpaZp3Rd5ydnnxd375jB9uNZd6itDydIX1dX76jBZiNWZmUKZvOXO4RoSAhPI5Nmo5SaYDM0G2QYa4WMY3PGI4S6Y5N0WxgLBu/kisspng-couch-sofa-bed-chair-living-room-furniture-sofa-5a84f9c5637db8.9414831315186641334075.png" )
-Image.create(input: "Table", tarlanguage:"English", category_id:5 , url:"https://www.freeiconspng.com/uploads/table-png-transparent-image-12.jpg" )
-Image.create(input: "Chair", tarlanguage:"English", category_id:5 , url:"http://www.pngall.com/wp-content/uploads/2016/04/Chair-Download-PNG.png" )
-Image.create(input: "Chair", tarlanguage:"English", category_id:1 , url:"http://www.pngall.com/wp-content/uploads/2016/04/Chair-PNG-Picture.png" )
-Image.create(input: "Marker", tarlanguage:"English", category_id:2, url:"https://sep.yimg.com/ay/yhst-65953260967716/expo-dry-erase-marker-chisel-tip-low-odor-ink-2.png" )
-Image.create(input: "Desk", tarlanguage:"English", category_id:2 , url:"http://www.pngall.com/wp-content/uploads/2/Desk-PNG-Clipart.png" )
-Image.create(input: "Carro", tarlanguage:"Spanish", category_id:6, url:"https://www.sccpre.cat/mypng/full/143-1438807_contratados-para-levar-carro-de-luxo-para-o.png" )
-Image.create(input: "Maritillo", tarlanguage:"Spanish", category_id:3, url:"https://www.bellota.com/var/site/storage/images/_aliases/large/7/1/2/3/33217-1-esl-EU/800213.png" )
-Image.create(input: "Cama", tarlanguage:"Spanish", category_id:6, url:"https://marcimex.vteximg.com.br/arquivos/ids/159014-700-700/6062_cama-viviana2P_foto1.jpg?v=636821440914300000" )
-Image.create(input: "Casa", tarlanguage:"Spanish", category_id:6, url:"https://candysdirt.com/wp-content/uploads/2019/07/74ac6372b9157edaf38087c1513faf38l-m0xd-w1020_h770_q80.jpg" )
-
-Image.create(input: "Couch", tarlanguage: "Spanish", category_id: 6, url:"https://png2.kisspng.com/sh/844421cab6c5e262428eac300635ff3e/L0KzQYm3UsE1N5l3j5H0aYP2gLBuTfNwfZRtReV4ZnGwcrbrTfNpaZp3Rd5ydnnxd375jB9uNZd6itDydIX1dX76jBZiNWZmUKZvOXO4RoSAhPI5Nmo5SaYDM0G2QYa4WMY3PGI4S6Y5N0WxgLBu/kisspng-couch-sofa-bed-chair-living-room-furniture-sofa-5a84f9c5637db8.9414831315186641334075.png" )
-Image.create(input: "Table", tarlanguage:"English", category_id:6 , url:"https://www.freeiconspng.com/uploads/table-png-transparent-image-12.jpg" )
-Image.create(input: "Chair", tarlanguage:"English", category_id:4 , url:"http://www.pngall.com/wp-content/uploads/2016/04/Chair-Download-PNG.png" )
-Image.create(input: "Chair", tarlanguage:"English", category_id:4 , url:"http://www.pngall.com/wp-content/uploads/2016/04/Chair-PNG-Picture.png" )
-Image.create(input: "Marker", tarlanguage:"English", category_id:2, url:"https://sep.yimg.com/ay/yhst-65953260967716/expo-dry-erase-marker-chisel-tip-low-odor-ink-2.png" )
-Image.create(input: "Desk", tarlanguage:"English", category_id:2 , url:"http://www.pngall.com/wp-content/uploads/2/Desk-PNG-Clipart.png" )
-Image.create(input: "Carro", tarlanguage:"Spanish", category_id:5, url:"https://www.sccpre.cat/mypng/full/143-1438807_contratados-para-levar-carro-de-luxo-para-o.png" )
-Image.create(input: "Maritillo", tarlanguage:"Spanish", category_id:3, url:"https://www.bellota.com/var/site/storage/images/_aliases/large/7/1/2/3/33217-1-esl-EU/800213.png" )
-Image.create(input: "Cama", tarlanguage:"Spanish", category_id:1, url:"https://marcimex.vteximg.com.br/arquivos/ids/159014-700-700/6062_cama-viviana2P_foto1.jpg?v=636821440914300000" )
-Image.create(input: "Casa", tarlanguage:"Spanish", category_id:1, url:"https://candysdirt.com/wp-content/uploads/2019/07/74ac6372b9157edaf38087c1513faf38l-m0xd-w1020_h770_q80.jpg" )
-
-
-Image.create(input: "Couch", tarlanguage: "Spanish", category_id: 7, url:"https://png2.kisspng.com/sh/844421cab6c5e262428eac300635ff3e/L0KzQYm3UsE1N5l3j5H0aYP2gLBuTfNwfZRtReV4ZnGwcrbrTfNpaZp3Rd5ydnnxd375jB9uNZd6itDydIX1dX76jBZiNWZmUKZvOXO4RoSAhPI5Nmo5SaYDM0G2QYa4WMY3PGI4S6Y5N0WxgLBu/kisspng-couch-sofa-bed-chair-living-room-furniture-sofa-5a84f9c5637db8.9414831315186641334075.png" )
-Image.create(input: "Table", tarlanguage:"English", category_id:8 , url:"https://www.freeiconspng.com/uploads/table-png-transparent-image-12.jpg" )
-Image.create(input: "Chair", tarlanguage:"English", category_id:9 , url:"http://www.pngall.com/wp-content/uploads/2016/04/Chair-Download-PNG.png" )
-Image.create(input: "Chair", tarlanguage:"English", category_id:10 , url:"http://www.pngall.com/wp-content/uploads/2016/04/Chair-PNG-Picture.png" )
-Image.create(input: "Marker", tarlanguage:"English", category_id:11, url:"https://sep.yimg.com/ay/yhst-65953260967716/expo-dry-erase-marker-chisel-tip-low-odor-ink-2.png" )
-Image.create(input: "Desk", tarlanguage:"English", category_id:12 , url:"http://www.pngall.com/wp-content/uploads/2/Desk-PNG-Clipart.png" )
-Image.create(input: "Carro", tarlanguage:"Spanish", category_id:12, url:"https://www.sccpre.cat/mypng/full/143-1438807_contratados-para-levar-carro-de-luxo-para-o.png" )
-Image.create(input: "Maritillo", tarlanguage:"Spanish", category_id:13, url:"https://www.bellota.com/var/site/storage/images/_aliases/large/7/1/2/3/33217-1-esl-EU/800213.png" )
-Image.create(input: "Cama", tarlanguage:"Spanish", category_id:14, url:"https://marcimex.vteximg.com.br/arquivos/ids/159014-700-700/6062_cama-viviana2P_foto1.jpg?v=636821440914300000" )
-Image.create(input: "Casa", tarlanguage:"Spanish", category_id:15, url:"https://candysdirt.com/wp-content/uploads/2019/07/74ac6372b9157edaf38087c1513faf38l-m0xd-w1020_h770_q80.jpg" )
-
-
-
-Image.create(input: "Couch", tarlanguage: "Spanish", category_id: 18, url:"https://png2.kisspng.com/sh/844421cab6c5e262428eac300635ff3e/L0KzQYm3UsE1N5l3j5H0aYP2gLBuTfNwfZRtReV4ZnGwcrbrTfNpaZp3Rd5ydnnxd375jB9uNZd6itDydIX1dX76jBZiNWZmUKZvOXO4RoSAhPI5Nmo5SaYDM0G2QYa4WMY3PGI4S6Y5N0WxgLBu/kisspng-couch-sofa-bed-chair-living-room-furniture-sofa-5a84f9c5637db8.9414831315186641334075.png" )
-Image.create(input: "Table", tarlanguage:"English", category_id:17 , url:"https://www.freeiconspng.com/uploads/table-png-transparent-image-12.jpg" )
-Image.create(input: "Chair", tarlanguage:"English", category_id:16 , url:"http://www.pngall.com/wp-content/uploads/2016/04/Chair-Download-PNG.png" )
-Image.create(input: "Chair", tarlanguage:"English", category_id:15 , url:"http://www.pngall.com/wp-content/uploads/2016/04/Chair-PNG-Picture.png" )
-Image.create(input: "Marker", tarlanguage:"English", category_id:11, url:"https://sep.yimg.com/ay/yhst-65953260967716/expo-dry-erase-marker-chisel-tip-low-odor-ink-2.png" )
-Image.create(input: "Desk", tarlanguage:"English", category_id:12 , url:"http://www.pngall.com/wp-content/uploads/2/Desk-PNG-Clipart.png" )
-Image.create(input: "Carro", tarlanguage:"Spanish", category_id:14, url:"https://www.sccpre.cat/mypng/full/143-1438807_contratados-para-levar-carro-de-luxo-para-o.png" )
-Image.create(input: "Maritillo", tarlanguage:"Spanish", category_id:12, url:"https://www.bellota.com/var/site/storage/images/_aliases/large/7/1/2/3/33217-1-esl-EU/800213.png" )
-Image.create(input: "Cama", tarlanguage:"Spanish", category_id:14, url:"https://marcimex.vteximg.com.br/arquivos/ids/159014-700-700/6062_cama-viviana2P_foto1.jpg?v=636821440914300000" )
-Image.create(input: "Casa", tarlanguage:"Spanish", category_id:15, url:"https://candysdirt.com/wp-content/uploads/2019/07/74ac6372b9157edaf38087c1513faf38l-m0xd-w1020_h770_q80.jpg" )
-
-
-
-Image.create(input: "Couch", tarlanguage: "Spanish", category_id: 7, url:"https://png2.kisspng.com/sh/844421cab6c5e262428eac300635ff3e/L0KzQYm3UsE1N5l3j5H0aYP2gLBuTfNwfZRtReV4ZnGwcrbrTfNpaZp3Rd5ydnnxd375jB9uNZd6itDydIX1dX76jBZiNWZmUKZvOXO4RoSAhPI5Nmo5SaYDM0G2QYa4WMY3PGI4S6Y5N0WxgLBu/kisspng-couch-sofa-bed-chair-living-room-furniture-sofa-5a84f9c5637db8.9414831315186641334075.png" )
-Image.create(input: "Table", tarlanguage:"English", category_id:9 , url:"https://www.freeiconspng.com/uploads/table-png-transparent-image-12.jpg" )
-Image.create(input: "Chair", tarlanguage:"English", category_id:8 , url:"http://www.pngall.com/wp-content/uploads/2016/04/Chair-Download-PNG.png" )
-Image.create(input: "Chair", tarlanguage:"English", category_id:12 , url:"http://www.pngall.com/wp-content/uploads/2016/04/Chair-PNG-Picture.png" )
-Image.create(input: "Marker", tarlanguage:"English", category_id:11, url:"https://sep.yimg.com/ay/yhst-65953260967716/expo-dry-erase-marker-chisel-tip-low-odor-ink-2.png" )
-Image.create(input: "Desk", tarlanguage:"English", category_id:15 , url:"http://www.pngall.com/wp-content/uploads/2/Desk-PNG-Clipart.png" )
-Image.create(input: "Carro", tarlanguage:"Spanish", category_id:14, url:"https://www.sccpre.cat/mypng/full/143-1438807_contratados-para-levar-carro-de-luxo-para-o.png" )
-Image.create(input: "Maritillo", tarlanguage:"Spanish", category_id:12, url:"https://www.bellota.com/var/site/storage/images/_aliases/large/7/1/2/3/33217-1-esl-EU/800213.png" )
-Image.create(input: "Cama", tarlanguage:"Spanish", category_id:14, url:"https://marcimex.vteximg.com.br/arquivos/ids/159014-700-700/6062_cama-viviana2P_foto1.jpg?v=636821440914300000" )
-Image.create(input: "Casa", tarlanguage:"Spanish", category_id:15, url:"https://candysdirt.com/wp-content/uploads/2019/07/74ac6372b9157edaf38087c1513faf38l-m0xd-w1020_h770_q80.jpg" )
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Category.create(title: "Animals", language: "English", user_id: 4, url:"https://res.cloudinary.com/translateme/image/upload/v1562816903/DefaultPics/hdtr6ein3yq8jcoypg4t.png")
+Image.create(original: "cat",orglanguage:"English",input: "gato", tarlanguage:"Spanish", category_id:8 , url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4E--6yCq8vJwcGxfWGTG_qIUdAtwabaPKRhQl1qNb0cRgqD1f" )
+Image.create(original: "dog",orglanguage:"English",input: "perro", tarlanguage:"Spanish", category_id:8 , url:"https://bucket1.glanacion.com/anexos/fotos/02/2749002w380.jpg")

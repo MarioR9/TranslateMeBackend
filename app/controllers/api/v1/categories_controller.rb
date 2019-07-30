@@ -25,20 +25,20 @@ class Api::V1::CategoriesController < ApplicationController
     end
 
     def dupCategories
-
         
         if User.find(params[:userId]).categories.exists?(params[:cateId].to_i)
             render json: {message: "Included Category"}
         else
         i = 0
         copiedCate = Category.find(params[:cateId].to_i)
-         
+
+
             
         newCate = Category.create(title: copiedCate.title, language: copiedCate.language, user_id: params[:userId], url: copiedCate.url)
         cateImgLength = Category.find(params[:cateId].to_i).images.length
         while i < cateImgLength do
           
-            Image.create(input: Category.find(params[:cateId].to_i).images[i].input, tarlanguage: Category.find(params[:cateId].to_i).images[i].tarlanguage, url: Category.find(params[:cateId].to_i).images[i].url, category_id: newCate.id)
+            Image.create(original: Category.find(params[:cateId].to_i).images[i].original,input: Category.find(params[:cateId].to_i).images[i].input, tarlanguage: Category.find(params[:cateId].to_i).images[i].tarlanguage,orglanguage: Category.find(params[:cateId].to_i).images[i].orglanguage, url: Category.find(params[:cateId].to_i).images[i].url, category_id: newCate.id)
             i += 1     
         end
 
